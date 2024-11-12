@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #161D6F;
+    --secondary-color: #98DED9;
+    --accent-color: #4B7BE5;
+    --text-dark: #0A0F35;
+    --background-light: #F0F8FF;
+}
+
+#hero {
+    background-image: linear-gradient(
+        135deg, 
+        #161D6F 0%,
+        #4B7BE5 50%,
+        #98DED9 100%
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(22, 29, 111, 0.15) 0%,
+        rgba(152, 222, 217, 0.15) 100%
+    );
+    z-index: 1;
+}
+
+.card {
+    border-color: #E8F6F5;
+    background: linear-gradient(
+        to bottom right,
+        #ffffff 0%,
+        var(--background-light) 100%
+    );
+}
+
+.btn-primary {
+    background-image: linear-gradient(
+        to right,
+        var(--primary-color) 0%,
+        var(--secondary-color) 100%
+    );
+    border: none;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(
+        to right,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );
+}
+
+.navbar {
+    background: linear-gradient(
+        to right,
+        #F0F8FF 0%,
+        #E8F6F5 100%
+    ) !important;
+}
+
+
+
+
+/* Card Styles */
+.card {
+    border-color: #eee;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* About Section */
+#tentang-kami {
+    background-color: var(--background-light) !important;
+}
+
+/* Price Styling */
+.price-tag {
+    color: #2ECC71;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-dark) !important;
+    padding: 20px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #hero {
+        padding: 60px 0;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+/* WhatsApp Button Animation */
+.btn-success {
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+}
