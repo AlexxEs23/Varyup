@@ -1,2 +1,2 @@
-# Varyup
-coba coba
+#VaryUp
+Mencoba Membuat toko online sederhana
